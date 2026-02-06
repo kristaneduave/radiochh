@@ -1,0 +1,290 @@
+:root {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #f4f9ff;
+  background: #031027;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  min-height: 100vh;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+.app-shell {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.bg-core {
+  position: absolute;
+  inset: 0;
+  background: #031027;
+}
+
+.glow-top {
+  position: absolute;
+  width: 420px;
+  height: 420px;
+  border-radius: 240px;
+  background: #0f4f84;
+  opacity: 0.3;
+  top: -170px;
+  right: -120px;
+}
+
+.glow-bottom {
+  position: absolute;
+  width: 380px;
+  height: 380px;
+  border-radius: 220px;
+  background: #2b2f95;
+  opacity: 0.2;
+  bottom: -190px;
+  left: -140px;
+}
+
+.page {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1050px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 18px 16px;
+}
+
+.page-title {
+  color: #f4f9ff;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  margin: 0 0 14px;
+}
+
+.login-shell {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.login-card {
+  background: #061937;
+  border: 1px solid #1b3f6a;
+  border-radius: 30px;
+  padding: 20px;
+  width: 100%;
+  max-width: 560px;
+  box-shadow: 0 10px 18px rgba(127, 156, 255, 0.16);
+}
+
+.input {
+  background: #082040;
+  border: 1px solid #2d4f78;
+  color: #f4f9ff;
+  border-radius: 14px;
+  padding: 12px 14px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  width: 100%;
+}
+
+.input::placeholder {
+  color: #87a3c6;
+}
+
+.primary-btn {
+  margin-top: 8px;
+  background: #5760f8;
+  border: 0;
+  border-radius: 14px;
+  padding: 12px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  width: 100%;
+}
+
+.secondary-btn {
+  margin-top: 10px;
+  border: 1px solid #2a466b;
+  border-radius: 14px;
+  padding: 12px;
+  color: #b6c9e0;
+  font-weight: 600;
+  background: #071c3a;
+  width: 100%;
+}
+
+.top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.hello {
+  color: #f4f9ff;
+  font-size: 34px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.hello-line {
+  margin-top: 6px;
+  width: 110px;
+  height: 2px;
+  background: #3d6f9f;
+}
+
+.profile-chip {
+  background: #0c2a4e;
+  border-radius: 14px;
+  border: 1px solid #335d8f;
+  padding: 10px 14px;
+  color: #cfe2fb;
+  font-weight: 700;
+}
+
+.grid-wrap {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 12px;
+}
+
+.home-card {
+  min-height: 180px;
+  border-radius: 24px;
+  padding: 20px;
+  background: #062248;
+  border: 1px solid #18457b;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+  color: inherit;
+}
+
+.home-card-active {
+  background: #0a2f63;
+  border-color: #759ffc;
+}
+
+.home-card-title {
+  color: #fff;
+  font-weight: 700;
+  font-size: 30px;
+  letter-spacing: 0.3px;
+  margin: 0;
+}
+
+.home-card-subtitle {
+  color: #a4c0e5;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.bottom-bar {
+  margin-top: auto;
+  margin-bottom: 2px;
+  background: #051730;
+  border-radius: 18px;
+  border: 1px solid #193a63;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+}
+
+.bottom-item {
+  padding: 6px 14px;
+  border-radius: 12px;
+  color: #7ea2ca;
+  font-weight: 600;
+  font-size: 14px;
+  background: transparent;
+  border: 0;
+}
+
+.bottom-item-active {
+  color: #fff;
+  font-weight: 700;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.back-btn {
+  color: #9ec0e6;
+  font-weight: 700;
+  font-size: 15px;
+  border: 0;
+  background: transparent;
+}
+
+.profile-shell {
+  flex: 1;
+  background: #061937;
+  border-radius: 30px;
+  border: 1px solid #1b3f6a;
+  padding: 16px;
+}
+
+.profile-inner {
+  height: 100%;
+  background: #072246;
+  border-radius: 24px;
+  border: 1px solid #2d5a8d;
+  padding: 18px;
+}
+
+.profile-name {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0 0 4px;
+}
+
+.profile-meta {
+  color: #b2c8e1;
+  font-size: 15px;
+  margin: 0 0 8px;
+}
+
+.profile-divider {
+  margin: 10px 0;
+  height: 1px;
+  background: #2f5279;
+}
+
+@media (min-width: 920px) {
+  .login-shell {
+    align-items: center;
+  }
+}
